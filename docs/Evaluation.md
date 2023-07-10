@@ -6,7 +6,7 @@ In order to evaluate CoreKube as a core, we need an environment to simulate UEs 
 
 To get started, you will need to log in to the Powder Platform and start a new experiment with the Nervion profile. We assume that you have an account on the Powder Platform with your SSH public key attached. Detailed instructions are presented below:
 
-![login](https://i.imgur.com/G0NpPFN.png)
+![Screenshot showing the Powder Platform](./images/start-experiment.png)
 
 1. [Log in](https://www.powderwireless.net/login.php) to the Powder Platform
 2. Click the top-left button "Experiments," and select from the dropdown "Start Experiment." You will be directed to a page to configure your new experiment.
@@ -15,14 +15,14 @@ To get started, you will need to log in to the Powder Platform and start a new e
 
     - **[Number of slave/compute nodes]** controls the number of VMs or physical nodes that will be part of the Kubernetes cluster for Nervion. Set this to **[2]**.
     - **[EPC implementation]** controls the mobile core network to deploy and test. Set this to **[CoreKube]**.
-    - **[EPC hardware]** controls the hardware to run the mobile core network on. We recommend either **[d430]** to run it on a physical hardware, or **[VM]** to run it on a VM.
+    - **[EPC hardware]** controls the hardware to run the mobile core network on. Set this to **[d430]** to run it on a physical hardware.
     - **[Multiplexer]** controls whether the dataplane multiplexer is enabled. The dataplane is not part of CoreKube, so we do not need this enabled. Set this to **[False]**.
     - **[VM number of cores]** controls the number of cores VMs will have if you have selected VM as the EPC hardware. We recommend keeping this at the default value.
     - **[RAM size]** controls the RAM VMs will have if you have selected VM as the EPC hardware. We recommend keeping this at the default value.
     - **[Number of slave/compute nodes for CoreKube]** controls the number of nodes that will be part of the Kubernetes cluster for CoreKube. Set this to **[2]**.
     - **[CoreKube Version]** controls which implementation of the CoreKube worker to use. Set this to **[5G]**.
 
-![img](https://i.imgur.com/A1nrmUC.png)
+![Screenshot of the configuration parameters](./images/deployment-config.png)
 
 5. Move onto Step 3, and give an optional name to the experiment. The node graph on the page should show 6 nodes: three for the Nervion cluster (`master`, `slave0`, and `slave1`) and three for the CoreKube cluster (`masterck`, `ck_slave0`, and `ck_slave1`).
 6. Move onto Step 4. Unless you need to extend the experiment or schedule it in a specific time frame, you can finalize the instantiation by clicking on "Finish".
@@ -46,7 +46,7 @@ The CoreKube worker instances are distributed automatically onto the two `ck_sla
 
 To evaluate CoreKube's scalability properties, we will put it under high load by using Nervion to simulate of 100 UEs continuously attaching and detaching. Detailed instructions are presented below:
 
-![image](https://i.imgur.com/ECbJxKd.png)
+![Screenshot of the node list on Powder](./images/nervion-node.png)
 1. Determine the hostname of the master node for the Nervion Kubernetes cluster. This is the node with the ID "`master`". The hostname will be in the format "`pcXXX`" where XXX are digits.
 2. In your web browser, go to `http://<hostname>.emulab.net:34567`, which is Nervion Controller's web interface, and where we will configure the load to put CoreKube under.
 3. Configure the simulation according to the values we list below for each parameter.
@@ -58,7 +58,7 @@ To evaluate CoreKube's scalability properties, we will put it under high load by
     - **[Slave Docker Image]** is the tag for the Docker image to use as the Nervion simulation slaves. Set this to **[j0lama/ran_slave_5g_noreset:latest]**.
     - **[Web-interface Refresh Time]** controls how often the web interface refreshes in seconds. It is fine to leave this at the default value.
 
-![image](https://i.imgur.com/w0fHxtp.png)
+![Screenshot of the Nervion Controller Web UI](./images/nervion-webui.png)
 
 4. Press "Submit" to start the simulation.
 
@@ -82,9 +82,9 @@ The simulation has started successfully when all of the containers show "Running
 
 ## Verifying CoreKube's Scalability
 
-Now that CoreKube is running, we can verify its scalability properties by examining how many worker nodes Kubernetes has spun up in addition to the two that we started with.
+Now that CoreKube is running, we can verify its scalability properties by examining how many worker nodes Kubernetes has spun up in addition to the two that we started with. This auto-scaling property is explained in detail in Section 5.3 of our paper.
 
-SSH into the `masterck` (master node for the CoreKube cluster) and execute `kubectl get pods`.
+SSH into `masterck` (master node for the CoreKube cluster) and execute `kubectl get pods`.
 
 ```
 user@masterck:~$ kubectl get pods
@@ -99,9 +99,37 @@ corekube-worker-5845b465f4-pvgs6     1/1     Running            0          5m56s
 ...
 ```
 
-We can see multiple rows of `corekube-worker`, which demonstrates CoreKube scaling dynamically to meet the demands of the load. We can find the exact number of workers that CoreKube has spun up with the following command:
+Recall that we started the experiment with two workers, but now there are more instances for it, demonstrating that CoreKube has scaled dynamically to meet the demands of the load. We can find the exact number of workers that CoreKube has spun up with the following command:
 
 ```
 user@masterck:~$ kubectl get pods --no-headers | wc -l | xargs bash -c 'echo $(($0 - 2)) workers'
 16 workers
 ```
+
+## Verifying CoreKube's Resilience
+
+We can evaluate CoreKube's resilience to outages by simulating a worker instance crash, and seeing that it will self-heal by spinning a replacement up. This behaviour is also examined in Section 5.4 of our paper.
+
+SSH into `masterck` (master node for the CoreKube cluster) and execute `kubectl get pods`. Choose any random one worker instance, and copy its name. Then execute the following to delete that instance:
+
+```
+kubectl delete pod <instance-name>
+```
+
+This is simulating the instance encountering a critical error and crashing.
+
+If you execute `kubectl get pods` afterwards, you will notice one less worker instance as expected. However, after a few seconds, a new instance will spin up. This can be checked by running `kubectl get pods` again, and finding a worker with a fresh age (50s, in the example below).
+
+```
+user@masterck:~$ kubectl delete pod corekube-worker-5845b465f4-pvgs6
+pod "corekube-worker-5845b465f4-pvgs6" deleted
+user@masterck:~$ kubectl get pods
+NAME                                 READY   STATUS             RESTARTS   AGE
+corekube-db-85b854b574-r66qz         1/1     Running            0          4h16m
+corekube-worker-5845b465f4-8hj66     1/1     Running            0          3h15m
+corekube-worker-5845b465f4-bxl92     1/1     Running            0          3h15m
+corekube-worker-5845b465f4-zfnvj     1/1     Running            0          50s
+...
+```
+
+The other worker instances are unaffected. This behaviour demonstrates CoreKube's ability to self-heal and prevent outages in the occasion of a random critical error. This is thanks to all workers being stateless, which means they can distribute the messages that would've originally been routed to the deleted instance.

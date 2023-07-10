@@ -1,15 +1,17 @@
 # CoreKube
 Intro
 
-## CoreKube Components
+## Components
 
 All the components that conform CoreKube are open-source. They can be accessed through the following links:
-- [FrontEnd](https://github.com/j0lama/CoreKubeFrontend)
+- [Front End](https://github.com/j0lama/CoreKubeFrontend)
 - Worker:
   - 4G Worker
-  - 5G Worker
+  - [5G Worker](https://github.com/andrewferguson/corekube5g-worker)
 - DataBase:
   - [DB](https://github.com/j0lama/CoreKubeDB)
   - [libck](https://github.com/j0lama/libck)
 
-## How to use CoreKube
+## Instructions for evaluation
+
+Detailed instructions can be found on [Evaluation.md](./docs/Evaluation.md).

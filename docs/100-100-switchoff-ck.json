@@ -1,0 +1,1710 @@
+{
+	"enbs":
+	[
+		
+		{
+			"enb_num": 1,
+			"enb_id": 14680064,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 2,
+			"enb_id": 14680065,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 3,
+			"enb_id": 14680066,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 4,
+			"enb_id": 14680067,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 5,
+			"enb_id": 14680068,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 6,
+			"enb_id": 14680069,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 7,
+			"enb_id": 14680070,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 8,
+			"enb_id": 14680071,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 9,
+			"enb_id": 14680072,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 10,
+			"enb_id": 14680073,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 11,
+			"enb_id": 14680074,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 12,
+			"enb_id": 14680075,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 13,
+			"enb_id": 14680076,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 14,
+			"enb_id": 14680077,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 15,
+			"enb_id": 14680078,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 16,
+			"enb_id": 14680079,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 17,
+			"enb_id": 14680080,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 18,
+			"enb_id": 14680081,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 19,
+			"enb_id": 14680082,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 20,
+			"enb_id": 14680083,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 21,
+			"enb_id": 14680084,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 22,
+			"enb_id": 14680085,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 23,
+			"enb_id": 14680086,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 24,
+			"enb_id": 14680087,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 25,
+			"enb_id": 14680088,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 26,
+			"enb_id": 14680089,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 27,
+			"enb_id": 14680090,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 28,
+			"enb_id": 14680091,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 29,
+			"enb_id": 14680092,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 30,
+			"enb_id": 14680093,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 31,
+			"enb_id": 14680094,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 32,
+			"enb_id": 14680095,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 33,
+			"enb_id": 14680096,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 34,
+			"enb_id": 14680097,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 35,
+			"enb_id": 14680098,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 36,
+			"enb_id": 14680099,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 37,
+			"enb_id": 14680100,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 38,
+			"enb_id": 14680101,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 39,
+			"enb_id": 14680102,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 40,
+			"enb_id": 14680103,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 41,
+			"enb_id": 14680104,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 42,
+			"enb_id": 14680105,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 43,
+			"enb_id": 14680106,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 44,
+			"enb_id": 14680107,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 45,
+			"enb_id": 14680108,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 46,
+			"enb_id": 14680109,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 47,
+			"enb_id": 14680110,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 48,
+			"enb_id": 14680111,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 49,
+			"enb_id": 14680112,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 50,
+			"enb_id": 14680113,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 51,
+			"enb_id": 14680114,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 52,
+			"enb_id": 14680115,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 53,
+			"enb_id": 14680116,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 54,
+			"enb_id": 14680117,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 55,
+			"enb_id": 14680118,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 56,
+			"enb_id": 14680119,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 57,
+			"enb_id": 14680120,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 58,
+			"enb_id": 14680121,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 59,
+			"enb_id": 14680122,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 60,
+			"enb_id": 14680123,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 61,
+			"enb_id": 14680124,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 62,
+			"enb_id": 14680125,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 63,
+			"enb_id": 14680126,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 64,
+			"enb_id": 14680127,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 65,
+			"enb_id": 14680128,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 66,
+			"enb_id": 14680129,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 67,
+			"enb_id": 14680130,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 68,
+			"enb_id": 14680131,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 69,
+			"enb_id": 14680132,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 70,
+			"enb_id": 14680133,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 71,
+			"enb_id": 14680134,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 72,
+			"enb_id": 14680135,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 73,
+			"enb_id": 14680136,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 74,
+			"enb_id": 14680137,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 75,
+			"enb_id": 14680138,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 76,
+			"enb_id": 14680139,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 77,
+			"enb_id": 14680140,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 78,
+			"enb_id": 14680141,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 79,
+			"enb_id": 14680142,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 80,
+			"enb_id": 14680143,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 81,
+			"enb_id": 14680144,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 82,
+			"enb_id": 14680145,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 83,
+			"enb_id": 14680146,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 84,
+			"enb_id": 14680147,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 85,
+			"enb_id": 14680148,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 86,
+			"enb_id": 14680149,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 87,
+			"enb_id": 14680150,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 88,
+			"enb_id": 14680151,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 89,
+			"enb_id": 14680152,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 90,
+			"enb_id": 14680153,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 91,
+			"enb_id": 14680154,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 92,
+			"enb_id": 14680155,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 93,
+			"enb_id": 14680156,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 94,
+			"enb_id": 14680157,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 95,
+			"enb_id": 14680158,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 96,
+			"enb_id": 14680159,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 97,
+			"enb_id": 14680160,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 98,
+			"enb_id": 14680161,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 99,
+			"enb_id": 14680162,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		},
+		{
+			"enb_num": 100,
+			"enb_id": 14680163,
+			"enb_mcc": "208",
+			"enb_mnc": "93"
+		}
+	],
+	"ues":
+	[
+		
+		{
+			"ue_id": 1,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000001",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 1
+		},
+		{
+			"ue_id": 2,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000002",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 2
+		},
+		{
+			"ue_id": 3,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000003",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 3
+		},
+		{
+			"ue_id": 4,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000004",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 4
+		},
+		{
+			"ue_id": 5,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000005",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 5
+		},
+		{
+			"ue_id": 6,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000006",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 6
+		},
+		{
+			"ue_id": 7,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000007",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 7
+		},
+		{
+			"ue_id": 8,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000008",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 8
+		},
+		{
+			"ue_id": 9,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000009",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 9
+		},
+		{
+			"ue_id": 10,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000010",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 10
+		},
+		{
+			"ue_id": 11,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000011",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 11
+		},
+		{
+			"ue_id": 12,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000012",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 12
+		},
+		{
+			"ue_id": 13,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000013",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 13
+		},
+		{
+			"ue_id": 14,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000014",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 14
+		},
+		{
+			"ue_id": 15,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000015",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 15
+		},
+		{
+			"ue_id": 16,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000016",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 16
+		},
+		{
+			"ue_id": 17,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000017",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 17
+		},
+		{
+			"ue_id": 18,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000018",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 18
+		},
+		{
+			"ue_id": 19,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000019",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 19
+		},
+		{
+			"ue_id": 20,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000020",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 20
+		},
+		{
+			"ue_id": 21,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000021",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 21
+		},
+		{
+			"ue_id": 22,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000022",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 22
+		},
+		{
+			"ue_id": 23,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000023",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 23
+		},
+		{
+			"ue_id": 24,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000024",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 24
+		},
+		{
+			"ue_id": 25,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000025",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 25
+		},
+		{
+			"ue_id": 26,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000026",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 26
+		},
+		{
+			"ue_id": 27,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000027",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 27
+		},
+		{
+			"ue_id": 28,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000028",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 28
+		},
+		{
+			"ue_id": 29,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000029",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 29
+		},
+		{
+			"ue_id": 30,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000030",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 30
+		},
+		{
+			"ue_id": 31,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000031",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 31
+		},
+		{
+			"ue_id": 32,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000032",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 32
+		},
+		{
+			"ue_id": 33,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000033",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 33
+		},
+		{
+			"ue_id": 34,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000034",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 34
+		},
+		{
+			"ue_id": 35,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000035",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 35
+		},
+		{
+			"ue_id": 36,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000036",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 36
+		},
+		{
+			"ue_id": 37,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000037",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 37
+		},
+		{
+			"ue_id": 38,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000038",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 38
+		},
+		{
+			"ue_id": 39,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000039",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 39
+		},
+		{
+			"ue_id": 40,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000040",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 40
+		},
+		{
+			"ue_id": 41,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000041",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 41
+		},
+		{
+			"ue_id": 42,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000042",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 42
+		},
+		{
+			"ue_id": 43,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000043",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 43
+		},
+		{
+			"ue_id": 44,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000044",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 44
+		},
+		{
+			"ue_id": 45,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000045",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 45
+		},
+		{
+			"ue_id": 46,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000046",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 46
+		},
+		{
+			"ue_id": 47,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000047",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 47
+		},
+		{
+			"ue_id": 48,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000048",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 48
+		},
+		{
+			"ue_id": 49,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000049",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 49
+		},
+		{
+			"ue_id": 50,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000050",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 50
+		},
+		{
+			"ue_id": 51,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000051",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 51
+		},
+		{
+			"ue_id": 52,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000052",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 52
+		},
+		{
+			"ue_id": 53,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000053",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 53
+		},
+		{
+			"ue_id": 54,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000054",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 54
+		},
+		{
+			"ue_id": 55,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000055",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 55
+		},
+		{
+			"ue_id": 56,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000056",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 56
+		},
+		{
+			"ue_id": 57,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000057",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 57
+		},
+		{
+			"ue_id": 58,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000058",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 58
+		},
+		{
+			"ue_id": 59,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000059",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 59
+		},
+		{
+			"ue_id": 60,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000060",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 60
+		},
+		{
+			"ue_id": 61,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000061",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 61
+		},
+		{
+			"ue_id": 62,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000062",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 62
+		},
+		{
+			"ue_id": 63,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000063",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 63
+		},
+		{
+			"ue_id": 64,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000064",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 64
+		},
+		{
+			"ue_id": 65,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000065",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 65
+		},
+		{
+			"ue_id": 66,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000066",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 66
+		},
+		{
+			"ue_id": 67,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000067",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 67
+		},
+		{
+			"ue_id": 68,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000068",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 68
+		},
+		{
+			"ue_id": 69,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000069",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 69
+		},
+		{
+			"ue_id": 70,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000070",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 70
+		},
+		{
+			"ue_id": 71,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000071",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 71
+		},
+		{
+			"ue_id": 72,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000072",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 72
+		},
+		{
+			"ue_id": 73,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000073",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 73
+		},
+		{
+			"ue_id": 74,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000074",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 74
+		},
+		{
+			"ue_id": 75,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000075",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 75
+		},
+		{
+			"ue_id": 76,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000076",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 76
+		},
+		{
+			"ue_id": 77,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000077",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 77
+		},
+		{
+			"ue_id": 78,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000078",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 78
+		},
+		{
+			"ue_id": 79,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000079",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 79
+		},
+		{
+			"ue_id": 80,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000080",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 80
+		},
+		{
+			"ue_id": 81,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000081",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 81
+		},
+		{
+			"ue_id": 82,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000082",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 82
+		},
+		{
+			"ue_id": 83,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000083",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 83
+		},
+		{
+			"ue_id": 84,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000084",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 84
+		},
+		{
+			"ue_id": 85,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000085",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 85
+		},
+		{
+			"ue_id": 86,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000086",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 86
+		},
+		{
+			"ue_id": 87,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000087",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 87
+		},
+		{
+			"ue_id": 88,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000088",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 88
+		},
+		{
+			"ue_id": 89,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000089",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 89
+		},
+		{
+			"ue_id": 90,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000090",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 90
+		},
+		{
+			"ue_id": 91,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000091",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 91
+		},
+		{
+			"ue_id": 92,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000092",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 92
+		},
+		{
+			"ue_id": 93,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000093",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 93
+		},
+		{
+			"ue_id": 94,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000094",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 94
+		},
+		{
+			"ue_id": 95,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000095",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 95
+		},
+		{
+			"ue_id": 96,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000096",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 96
+		},
+		{
+			"ue_id": 97,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000097",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 97
+		},
+		{
+			"ue_id": 98,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000098",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 98
+		},
+		{
+			"ue_id": 99,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000099",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 99
+		},
+		{
+			"ue_id": 100,
+			"ue_mcc": "208",
+			"ue_mnc": "93",
+			"ue_msin": "0000000100",
+			"ue_key": "0x3f3f473f2f3fd0943f3f3f3f097c6862",
+			"ue_op_key": "0xe9be7fb89bb01978e67972ca8580079e",
+			"control_plane": "init-0-detach_switch_off-0-attach-0",
+			"traffic_command": "sleep 1000000",
+			"enb": 100
+		}
+	]
+}

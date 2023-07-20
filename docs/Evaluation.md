@@ -66,7 +66,8 @@ Verify that there are four pods with a status of "Running": one database instanc
 
 To evaluate CoreKube's capabilities, you will need to put it under some load. This will be done using the Nervion Controller included as part of the deployment. We outline here the common workflow across all experiments.
 
-> **NOTE**
+> :memo: **Note**
+> 
 > There may be different setup requirements for each that are detailed within their respective sections, so you are encouraged to read those first.
 
 ![Screenshot of the node list on Powder](./images/nervion-node.png)
@@ -91,7 +92,7 @@ To evaluate CoreKube's capabilities, you will need to put it under some load. Th
 
 As shown in Section 5.2 of our paper, the performance of CoreKube is comparatively better than the state-of-the-art competition. We measure the performance as the message response latency: the time taken by CoreKube to respond to a control plane message with a reply, measured from the time at which the incoming control plane message is received.
 
-The Nervion Controller should be set up using the `single-ue-ck.json` file. This file specifies a single UE that attaches and detaches, with a ten-second wait between each attach-detach cycle.
+The Nervion Controller should be set up using the `single-ue-ck.json` file. This file specifies a single UE that attaches and detaches, with a ten-second wait between each attach-detach cycle. If a previous simulation is still running, click on the "Restart" button and wait 1-2 minutes for the pods to terminate before setting it up again.
 
 To observe the results from this experiment, connect to the `masterck` node over SSH. SSH connection details for each node are listed on the Powder experiment dashboard. Then run the following script, stopping it with <kbd>Control</kbd> + <kbd>C</kbd> once you have enough output:
 

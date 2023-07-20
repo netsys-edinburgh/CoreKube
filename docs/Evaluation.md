@@ -1,17 +1,17 @@
-# Evaluating CoreKube
+# Artifact Evaluation of CoreKube
 
-In order to evaluate CoreKube as a core, we need an environment to simulate UEs and RANs that connect to it. We will use the [Nervion](https://github.com/netsys-edinburgh/nervion-powder) simulator. The official Nervion Powder Profile, present as a deployment profile within the [Powder Platform](https://powderwireless.net/), will deploy both Nervion and CoreKube on Powder.
+In order to evaluate CoreKube as a core, we need an environment to simulate UEs and RANs that connect to it. We will use the [Nervion](https://github.com/netsys-edinburgh/nervion-powder) simulator (Larrea, 2021). The official Nervion Powder Profile, present as a deployment profile within the [Powder Platform](https://powderwireless.net/), will deploy both Nervion and CoreKube on Powder.
 
 ## Creating an Experiment
 
-To get started, you will need to log in to the Powder Platform and start a new experiment with the Nervion profile. We assume that you have an account on the Powder Platform with your SSH public key attached. Detailed instructions are presented below:
+Users need to set up a new CoreKube deployment on the Powder Platform. We assume that you have an account on the Powder Platform with your SSH public key attached.
 
 ![Screenshot showing the Powder Platform](./images/start-experiment.png)
 
-1. [Log in](https://www.powderwireless.net/login.php) to the Powder Platform
+1. First, [Log in](https://www.powderwireless.net/login.php) to the Powder Platform.
 2. Click the top-left button "Experiments," and select from the dropdown "Start Experiment." You will be directed to a page to configure your new experiment.
-3. Within Step 1 ("Select a Profile"), click the "Select Profile" button to open the dialogue to change the deployment profile. Search for "Nervion", and select it.
-4. Move onto Step 2, where you will be presented configuration options for the deployment. Below, we list the value each parameter should be set to.
+3. Within Step 1 ("Select a Profile"), click the "Select Profile" button to open the dialogue to change the deployment profile from the default. Search for "Nervion", and select it.
+4. Move onto Step 2, where you will be presented configuration options for the deployment. Below are values each parameter should be set to.
 
     - **[Number of slave/compute nodes]** controls the number of VMs or physical nodes that will be part of the Kubernetes cluster for Nervion. Set this to **[2]**.
     - **[EPC implementation]** controls the mobile core network to deploy and test. Set this to **[CoreKube]**.
@@ -22,15 +22,31 @@ To get started, you will need to log in to the Powder Platform and start a new e
     - **[Number of slave/compute nodes for CoreKube]** controls the number of nodes that will be part of the Kubernetes cluster for CoreKube. Set this to **[2]**.
     - **[CoreKube Version]** controls which implementation of the CoreKube worker to use. Set this to **[5G]**.
 
-![Screenshot of the configuration parameters](./images/deployment-config.png)
+![Screenshot of configured parameters](./images/deployment-config.png)
 
 5. Move onto Step 3, and give an optional name to the experiment. The node graph on the page should show 6 nodes: three for the Nervion cluster (`master`, `slave0`, and `slave1`) and three for the CoreKube cluster (`masterck`, `ck_slave0`, and `ck_slave1`).
-6. Move onto Step 4. Unless you need to extend the experiment or schedule it in a specific time frame, you can finalize the instantiation by clicking on "Finish".
+6. Move onto Step 4, and finalize the instantiation by clicking on "Finish" as there is no need to schedule the deployment.
 
-The experiment is deployed and ready when, within the "List View" tab, all rows have a status of "ready" and say "Finished" for the "Startup" column. This can take several minutes, and possibly longer if deployed to a VM instead of a physical machine.
+The experiment is deployed and ready when, within the "List View" tab, all rows have a status of "ready" and say "Finished" for the "Startup" column. This can take 10-15 minutes.
 
-At this point, CoreKube will already be running on Kubernetes. This can be verified by SSH-ing into the `masterck` node (which acts as the CoreKube cluster controller), and executing the following:
+When done, SSH into the `masterck` node (which acts as the CoreKube cluster controller). SSH connection details for each node are listed on the Powder experiment dashboard. You have two ways of following the evaluation workflow: through a graphical dashboard (GUI) or through the command line (CLI - advanced).
 
+<table>
+<tr>
+<th>GUI</th>
+<td>
+
+Upon SSH-ing, you will be greeted with a web URL to the CoreKube Kubernetes dashboard, which provides a graphical overview of the CoreKube deployment. Navigate to the URL in your web browser. You will be prompted to log in, which you can bypass and use the admin account by pressing on the "Skip" button.
+
+Once logged into the CoreKube Kubernetes dashboard, scroll down to the "Pods" section to see the list of running pods.
+
+</td>
+</tr>
+<tr>
+<th>CLI</th>
+<td>
+
+After SSH-ing, execute the following:
 ```
 user@masterck:~$ kubectl get pods
 NAME                                 READY   STATUS    RESTARTS   AGE
@@ -40,49 +56,84 @@ corekube-worker-57456fcfcb-kjpxf     1/1     Running   0          107s
 corekube-worker-57456fcfcb-ps5nw     1/1     Running   0          106s
 ```
 
-The CoreKube worker instances are distributed automatically onto the two `ck_slave` nodes, which you can also verify by executing the same command with `--output=wide`.
+</td>
+</tr>
+</table>
 
-## Putting CoreKube Under Load
+Verify that there are four pods with a status of "Running": one database instance, one front-end instance, and two worker instances. If any of them still have a status of "ContainerCreating", you should wait and check again.
 
-To evaluate CoreKube's scalability properties, we will put it under high load by using Nervion to simulate of 100 UEs continuously attaching and detaching. Detailed instructions are presented below:
+## Experiment Workflow
+
+To evaluate CoreKube's capabilities, you will need to put it under some load. This will be done using the Nervion Controller included as part of the deployment. We outline here the common workflow across all experiments.
+
+> **NOTE**
+> There may be different setup requirements for each that are detailed within their respective sections, so you are encouraged to read those first.
 
 ![Screenshot of the node list on Powder](./images/nervion-node.png)
-1. Determine the hostname of the master node for the Nervion Kubernetes cluster. This is the node with the ID "`master`". The hostname will be in the format "`pcXXX`" where XXX are digits.
-2. In your web browser, go to `http://<hostname>.emulab.net:34567`, which is Nervion Controller's web interface, and where we will configure the load to put CoreKube under.
-3. Configure the simulation according to the values we list below for each parameter.
+1. First, determine the hostname of the master node for the Nervion Kubernetes cluster. This is the node with the ID "`master`" in the Powder UI. The hostname will be the part after the at-mark (@) in the SSH command, in the format `pcXXX.emulab.net`, where XXX are digits.
+2. Then, in a new tab in your web browser, navigate to the following URL: `http://<hostname>:34567`. This is the Nervion Controller's web interface, and where you will configure the load to put CoreKube under.
+3. Configure the simulation according to the values listed below for each parameter. The meaning of each parameter is documented in more detail in the [Nervion Controller documentation](https://github.com/netsys-edinburgh/nervion-powder/blob/master/doc/powder.md).
 
     - **[MME/AMF IP Address]** is the IP address of the MME/AMF. This is equivalent to the core network's IP. The deployment profile we used will automatically assign `192.168.4.80` to the core network, so set this to **[192.168.4.80]**.
     - **[Control-Plane Mode]** provides better scalability by disabling the data-plane. If this mode is enabled, each UE Kubernetes pod will emulate multiple UEs via multi-threading, instead of just one. **[Tick]** this as we do not need a data-plane, and set the **[Number of threads per nUE]** to **[10]**.
     - **[Multiplexer IP Address]** is the IP address of the multiplexer. Since we are not using one, leave this empty.
-    - **[Configuration file]** is a JSON file that specifies the behaviour that the UEs and the RAN should take in the simulation. For reference, A complete guide on the JSON format is [provided in the Nervion repository](https://github.com/netsys-edinburgh/nervion-powder/blob/master/doc/scenarios.md). Use **[100-100-switchoff-ck.json](./100-100-switchoff-ck.json)**, which specifies that there should be 100 UEs each connected to their own RAN (100 of them), performing a continuous loop of attaching and detaching (with switch-off).
+    - **[Configuration file]** is a JSON file that specifies the behaviour that the UEs and the RAN should take in the simulation. For reference, a complete guide on the JSON format is [provided in the Nervion repository](https://github.com/netsys-edinburgh/nervion-powder/blob/master/doc/scenarios.md). 
+
+    For this field, the Auto-Scaling and Self-Healing experiments use the **[100-100-switchoff-ck.json](./100-100-switchoff-ck.json)** file, while the Performance experiment uses the **[single-ue-ck.json](./single-ue-ck.json)** file.
     - **[Slave Docker Image]** is the tag for the Docker image to use as the Nervion simulation slaves. Set this to **[j0lama/ran_slave_5g_noreset:latest]**.
     - **[Web-interface Refresh Time]** controls how often the web interface refreshes in seconds. It is fine to leave this at the default value.
 
-![Screenshot of the Nervion Controller Web UI](./images/nervion-webui.png)
+![Screenshot of the configured Nervion Controller Web UI](./images/nervion-webui.png)
 
-4. Press "Submit" to start the simulation.
+4. Finally, press "Submit" to start the simulation.
 
-At this point, 110 new Kubernetes pods are being created in the Nervion cluster: 100 for the RAN, and 10 for multi-threaded UEs. We should have 111 in total if we include the Nervion controller pod. We can verify this by SSH-ing into the `master` node, and executing the following:
+## Evaluating CoreKube's Performance
+
+As shown in Section 5.2 of our paper, the performance of CoreKube is comparatively better than the state-of-the-art competition. We measure the performance as the message response latency: the time taken by CoreKube to respond to a control plane message with a reply, measured from the time at which the incoming control plane message is received.
+
+The Nervion Controller should be set up using the `single-ue-ck.json` file. This file specifies a single UE that attaches and detaches, with a ten-second wait between each attach-detach cycle.
+
+To observe the results from this experiment, connect to the `masterck` node over SSH. SSH connection details for each node are listed on the Powder experiment dashboard. Then run the following script, stopping it with <kbd>Control</kbd> + <kbd>C</kbd> once you have enough output:
 
 ```
-user@master:~$ kubectl get pods --no-headers | wc -l
-111
-user@master:~$ kubectl get pods
-NAME                            READY   STATUS              RESTARTS   AGE
-ran-emulator-7774b8d457-qnn66   1/1     Running             0          43m
-slave-0                         0/1     ContainerCreating   0          33s
-slave-1                         1/1     Running             0          33s
-slave-10                        0/1     ContainerCreating   0          33s
-slave-100                       0/1     ContainerCreating   0          32s
-slave-101                       0/1     ContainerCreating   0          32s
-...
+user@masterck:~$ /local/repository/config/test/latencies.sh
 ```
 
-The simulation has started successfully when all of the containers show "Running" as its status.
+This script uses [`tshark`](https://www.wireshark.org/docs/man-pages/tshark.html) to capture the packets between Nervion and CoreKube. It is configured to only show NGAP (control plane) packets, and to show the relative times of such packets. Specifically, the first column of each line of output is the time between the previously-displayed packet and the current packet, measured in seconds.
 
-## Verifying CoreKube's Scalability
+Observe the rows that show packets from CoreKube to Nervion. The relative times of these packets represent the response latencies of CoreKube. The value should be within 1-3 milliseconds (0.001 - 0.003 seconds), which agrees with values presented in Figure 6a, and is better than latencies for Open5GS and Free5GS cores that measure up to 10 milliseconds (0.01 seconds).
 
-Now that CoreKube is running, we can verify its scalability properties by examining how many worker nodes Kubernetes has spun up in addition to the two that we started with. This auto-scaling property is explained in detail in Section 5.3 of our paper.
+An example output is shown below. The latency of the *Authentication request* message can be observed by finding the line with the text "Authentication request", then observing the number at the start of the line. In this case it would be 001833610, or 1.83ms. Similarly, the example output shows the latency of the *Security mode command* message to be 1.3ms.
+
+```
+2.000794704 Nervion → CoreKube NGAP 156 InitialUEMessage, Registration request
+0.001833610 CoreKube → Nervion NGAP 148, DownlinkNASTransport, Authentication request
+0.000673420 Nervion → CoreKube NGAP 152, UplinkNASTransport, Authentication response
+0.001328286 CoreKube → Nervion NGAP 128, DownlinkNASTransport, Security mode command
+```
+
+## Evaluating CoreKube's Auto-Scaling Properties
+
+CoreKube auto-scales in response to its load, and distributes the incoming messages fairly across its workers (as detailed in Section 5.3 and Section 3.4). This can be verified by examining how many worker nodes Kubernetes spins up when we put it under a load of 100 UEs.
+
+The Nervion Controller should be set up using the `100-100-switchoff-ck.json` file. This file specifies that there should be 100 UEs each connected to their own gNB (100 of them), performing a continuous loop of attaching and detaching (with switch-off). If a previous simulation is still running, click on the "Restart" button and wait 1-2 minutes for the pods to terminate before setting it up again.
+
+<table>
+<tr>
+<th>GUI</th>
+<td>
+
+Open the CoreKube Kubernetes dashboard, with the simulation ongoing. If needed, you can obtain the URL once again by SSH-into the master node of the CoreKube cluster (`masterck`).
+
+In the table titled "Deployments," you should see the number of pods for `corekube-worker` gradually increase over the next few minutes. An example screenshot is given below:
+
+![Example screenshot of CoreKube auto-scaling](./images/scaling-expected-output.png)
+
+</td>
+</tr>
+<tr>
+<th>CLI</th>
+<td>
 
 SSH into `masterck` (master node for the CoreKube cluster) and execute `kubectl get pods`.
 
@@ -99,16 +150,48 @@ corekube-worker-5845b465f4-pvgs6     1/1     Running            0          5m56s
 ...
 ```
 
-Recall that we started the experiment with two workers, but now there are more instances for it, demonstrating that CoreKube has scaled dynamically to meet the demands of the load. We can find the exact number of workers that CoreKube has spun up with the following command:
+The exact number of workers that CoreKube has spun up can be found with the following command:
 
 ```
 user@masterck:~$ kubectl get pods --no-headers | wc -l | xargs bash -c 'echo $(($0 - 2)) workers'
 16 workers
 ```
 
-## Verifying CoreKube's Resilience
+</td>
+</tr>
+</table>
 
-We can evaluate CoreKube's resilience to outages by simulating a worker instance crash, and seeing that it will self-heal by spinning a replacement up. This behaviour is also examined in Section 5.4 of our paper.
+Recall that we started the experiment with two workers, but now there are more instances for it, demonstrating that CoreKube has scaled dynamically to meet the demands of the load.
+
+Note that the HPA can take up to a minute to detect changes in load, which leads to the slight delay in scaling.
+
+You can optionally customize the experiment through modifying the Nervion JSON configuration to have more or less UEs, and observe the change in number of pods CoreKube scales to. The [Nervion documentation](https://github.com/netsys-edinburgh/nervion-powder/blob/master/doc/powder.md) is a useful resource to guide the customization of UE behavior and load.
+
+## Verifying CoreKube's Self-Healing Properties
+
+CoreKube is resilient to sudden outages or critical errors in its workers. This self-healing property, also discussed in Section 5.4, will be verified in this experiment. This will be done by deleting one random worker instance mid-load and verifying that a replacement will spin up.
+
+Nervion Controller should be kept running after the auto-scaling experiment. If it was restarted, you should set up the Nervion Controller once again using the 100-100-switchoff-ck.json file.
+
+
+<table>
+<tr>
+<th>GUI</th>
+<td>
+
+Open the CoreKube Kubernetes dashboard, with the simulation ongoing. If needed, you can obtain the URL once again by SSH-into the master node of the CoreKube cluster (`masterck`).
+
+In the table titled "Pods," choose any random worker pod and delete it to simulate a sudden critical failure. This can be done using the three-circle button on the right end of each row.
+
+You should see live updates in the table. The worker that you selected to delete will change its status to "Terminating". After a few seconds, the HPA will detect an unusually high workload spread across the instances, and will spin up a new worker. You will be able to see this live as an additional row in the table, identified by a very recent creation time.
+
+![Example screenshot of CoreKube self-healing](./images/healing-expected-output.png)
+
+</td>
+</tr>
+<tr>
+<th>CLI</th>
+<td>
 
 SSH into `masterck` (master node for the CoreKube cluster) and execute `kubectl get pods`. Choose any random one worker instance, and copy its name. Then execute the following to delete that instance:
 
@@ -118,7 +201,7 @@ kubectl delete pod <instance-name>
 
 This is simulating the instance encountering a critical error and crashing.
 
-If you execute `kubectl get pods` afterwards, you will notice one less worker instance as expected. However, after a few seconds, a new instance will spin up. This can be checked by running `kubectl get pods` again, and finding a worker with a fresh age (50s, in the example below).
+If you execute `kubectl get pods` afterwards, you will notice one less worker instance as expected. However, after a few seconds, the HPA will detect an unusually high workload spread across the instances, and will spin up a new worker. This can be checked by running `kubectl get pods` again, and finding a worker with a fresh age (50s, in the example below).
 
 ```
 user@masterck:~$ kubectl delete pod corekube-worker-5845b465f4-pvgs6
@@ -132,4 +215,8 @@ corekube-worker-5845b465f4-zfnvj     1/1     Running            0          50s
 ...
 ```
 
-The other worker instances are unaffected. This behaviour demonstrates CoreKube's ability to self-heal and prevent outages in the occasion of a random critical error. This is thanks to all workers being stateless, which means they can distribute the messages that would've originally been routed to the deleted instance.
+</td>
+</tr>
+</table>
+
+This behaviour demonstrates CoreKube's ability to self-heal and prevent outages in the occasion of a random critical error. This is thanks to all workers being stateless, which means they can distribute the messages that would've originally been routed to the deleted instance. During the process of the one faulty pod terminating and a new one spinning up, all messages from the 100 UEs continue to be handled by being distributed to the other functioning workers.

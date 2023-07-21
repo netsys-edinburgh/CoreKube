@@ -1,6 +1,6 @@
 # CoreKube: An Efficient, Autoscaling and Resilient Mobile Core System
 
-Intro
+CoreKube is a novel message-focused and cloud-native mobile core system design. In light of the central role that the mobile core has in supporting mobile network operations spanning billions of user and IoT devices, efficiency, cost-effective dynamic scalability and resilience of the core control plane are paramount. It was with these goals that the CoreKube design was developed. Orchestration of containerized CoreKube components using Kubernetes, allowing to leverage the its autoscaling and self-healing properties. CoreKube complies with the 3GPP RAN-core standards, allowing commercial-off-the-shelf (COTS) devices to connect to it.
 
 ## Components
 

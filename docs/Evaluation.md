@@ -221,3 +221,24 @@ corekube-worker-5845b465f4-zfnvj     1/1     Running            0          50s
 </table>
 
 This behaviour demonstrates CoreKube's ability to self-heal and prevent outages in the occasion of a random critical error. This is thanks to all workers being stateless, which means they can redirect the messages that would've been previously routed to the deleted instance. During the process of the one faulty pod terminating and a new one spinning up, all messages from the 100 UEs continue to be handled by being redirected to the other functioning workers.
+
+## Figures 8, 9a and 10 in the paper
+
+In response to feedback from the artifact evaluators (A1) we have provided additional scripts to generate the values shown in Figures 8, 9a and 10 in the paper. Specifically, there are two new scripts present:
+
+1. `/local/repository/config/test/a1_capture.sh` captures the 5G control plane traffic from the currently running experiment and saves it to a file `/local/repository/config/test/tshark-log.txt`
+2. `/local/repository/config/test/a1_analyze.py` analyses the `tshark-log.txt` file and presents the statistics for Figures 8, 9a and 10.
+
+### Observing results from Figure 8 (Request-response ratio)
+
+Nervion emulator should be kept running after the auto-scaling experiment. If it was restarted, you should set up the Nervion emulator once again using the 100-100-switchoff-ck.json file.
+
+Run the script `/local/repository/config/test/a1_capture.sh`. Leave it running for between 1-5 minutes to collect sufficient network traffic. Then run `/local/repository/config/test/a1_analyze.py`. Observe the final line of output, which prints the request-response ratio. It should be 100%. (Values of 99.x% or the script crashing can occasionally occur if the `a1_capture.sh` script happened to start capturing mid-way through a packet. In such cases, re-trying typically gives a successful result).
+
+### Observing results from Figure 9 (Average Latency)
+
+The same setup is required as the above section (Observing results from Figure 8). Assuming that section has been completed, a graph PDF will have been saved to `/local/repository/config/test/message-latencies.pdf`. Downloading this graph (e.g. using the `scp` utility) and opening it will reveal a graph of the message latencies over time. Typically the latency is around 1.6ms, although spikes to around 2ms can occur.
+
+### Observing results from Figure 10 (Packets-per-second for resiliance)
+
+Repeat the experiment in the section 'Verifying CoreKube's Resilience' except this time also run the `/local/repository/config/test/a1_capture.sh` script during the time that a pod is killed. Afterwards, stop the capture script and run the `/local/repository/config/test/a1_analyze.py` script. This should produce a graph PDF at `/local/repository/config/test/packets-per-second.pdf`. Downloading this graph (e.g. using the `scp` utility) and opening it will reveal a graph of the packets-per-second over time. There should be no significant drop in the packets-per-second for either the uplink or downlink messages at the time the pod was killed.

@@ -9,6 +9,7 @@ All of the components that make up CoreKube are open-source. They can be accesse
 - Worker:
   - [4G Worker](https://github.com/andrewferguson/corekube-worker) (AGPL V3 license)
   - [5G Worker](https://github.com/andrewferguson/corekube5g-worker) (AGPL V3 license)
+  - [5G Worker Open5GS Libraries](https://github.com/andrewferguson/open5gs-corekube) (AGPL V3 license)
 - Database:
   - [DB](https://github.com/j0lama/CoreKubeDB) (MIT license)
   - [libck](https://github.com/j0lama/libck) (MIT license)
